@@ -1,0 +1,136 @@
+.section-login {
+    position: relative;
+    width: 550px;
+    height: 600px;
+    border-radius: 24px;
+    background: rgba(43, 3, 219, 0.08);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    opacity: 0.80;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* form */
+.form-login {
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.form-login h1 {
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-login label {
+    width: 90%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+}
+
+.form-login input {
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ffffff;
+    color: #000;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-login input:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* botões */
+.btn-entrar,
+.btn-cadastrar {
+    margin-top: 16px;
+    padding: 10px 28px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-entrar {
+    background: #ffffff;
+    color: #2b03db;
+}
+
+.btn-entrar:hover {
+    background: #e6e6ff;
+}
+
+.btn-cadastrar {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.btn-cadastrar:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .section-login {
+        width: 90%;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .form-login {
+        padding: 0 20px;
+    }
+
+    .form-login input,
+    .form-login label {
+        width: 100%;
+    }
+
+    .btn-entrar,
+    .btn-cadastrar {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-login h1 {
+        font-size: 22px;
+    }
+
+    .form-login input {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .btn-entrar,
+    .btn-cadastrar {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
